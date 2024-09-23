@@ -1,0 +1,41 @@
+package hinh.hoc;
+
+public class Square {
+   private int edge;
+   private String unit;
+   public int getEdge() {
+	   return this.edge;
+   }
+   public void setEdge(int edge) {
+	   this.edge= edge;
+   }
+   public String getUnit() {
+	   return this.unit;
+   }
+   public void setUnit(String unit) {
+	   this.unit= unit;
+   }
+   
+
+}
+---------------------------------------
+package hinh.hoc;
+
+public class Circle {
+
+	   private int radius;
+	   private String unit;
+	   public int getRadius() {
+		   return this.radius;
+	   }
+	   public void setRadius(int radius) {
+		   this.radius= radius;
+	   }
+	   public String getUnit() {
+		   return this.unit;
+	   }
+	   public void setUnit(String unit) {
+		   this.unit= unit;
+	   }
+
+}
