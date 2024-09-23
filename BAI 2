@@ -1,0 +1,38 @@
+package hinh.hoc;
+
+public class Vecto {
+  private int x;
+  private int y;
+  private int z;
+  
+  public Vecto(int x,int y, int z) {
+	  this.x=x;
+	  this.y=y;
+	  this.z=z;
+	  
+  }
+  public int getX() {
+	  return this.x;
+  }
+  public int getY() {
+	  return this.y;
+  }
+  public int getZ() {
+	  return this.z;
+  }
+   public String add(int a, int b, int c) {
+	   String s= ""+ (this.x+a) +","+ (this.y+b)+","+(this.z+c);
+	   return s;
+   }
+   public String subtract(int a, int b, int c) {
+	   String s= ""+ (this.x-a)+ ","+ (this.y-b)+","+(this.z-c);
+	   return s;
+   }
+   public String multiplynumber(int k) {
+	   String s= ""+ (k*this.x)+","+(k*this.y)+","+(k*this.z);
+	   return s;   
+   }
+   public int multiply(int a, int b, int c) {
+	   return this.x*a+this.y*b+this.z*c;
+   }
+}
