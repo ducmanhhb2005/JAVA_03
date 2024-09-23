@@ -1,0 +1,50 @@
+public class NhanVien {
+
+	private String tenNhanVien;
+	private double luongCoBan;
+	private double heSoLuong;
+	public double LUONG_MAX;
+	public boolean tangLuong(double a) {
+		this.heSoLuong+=a;
+		if (this.heSoLuong*this.luongCoBan>LUONG_MAX) {this.heSoLuong-=a;
+			System.out.print("Khong thay doi duoc he so luong");
+		return false;
+		}
+		return true;
+	}
+	public double tinhLuong() {
+		return this.luongCoBan*this.heSoLuong;
+	}
+	public void inTT() {
+		System.out.println(this.tenNhanVien);
+		System.out.println(this.luongCoBan);
+		System.out.println(this.heSoLuong);
+		System.out.println(this.LUONG_MAX);
+	}
+	public String getTenNhanVien() {
+		return this.tenNhanVien;
+	}
+	public void setTenNhanVien(String tenNhanVien) {
+		this.tenNhanVien=tenNhanVien;
+	}
+	public double getLuongCoBan() {
+		return this.luongCoBan;
+	}
+	public void setLuongCoBan(double luongCoBan) {
+		this.luongCoBan=luongCoBan;
+	}
+	public double getHeSoLuong() {
+		return this.heSoLuong;
+	}
+	public void setHeSoLuong(double heSoLuong) {
+		this.heSoLuong=heSoLuong;
+	}
+	public double getLUONG_MAX() {
+		return this.LUONG_MAX;
+	}
+	public void setLUONG_MAX(double LUONG_MAX) {
+		this.LUONG_MAX=LUONG_MAX;
+	}
+	
+
+}
